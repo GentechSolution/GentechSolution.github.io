@@ -186,5 +186,16 @@
     justify-content: center;
     text-align: center;
   }
-  
+  .contact-text {
+    text-align: center;
+  }
+  .contact-text ul li{
+    list-style: none;
+    text-align: left;
+    display: list-item;
+    text-decoration: none;
+  }
+  .contact-text ul {
+    text-align: center;
+  }
 }
