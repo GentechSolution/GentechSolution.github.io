@@ -186,12 +186,19 @@
     justify-content: center;
     text-align: center;
   }
-  .contact-text {
+  .services-column h3, h4 {
+    text-align: center;
+  }
+  .services-column ul li {
+    list-style: none;
+    text-align: center;
+  }
+  .contact-text a {
     text-align: center;
   }
   .contact-text ul li{
     list-style: none;
-    text-align: left;
+    text-align: center;
     display: list-item;
     text-decoration: none;
   }
