@@ -102,7 +102,24 @@
   text-align: justify;  
   list-style: none;
 }
-
+.container-contact h2 {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.contact-text a {
+  text-decoration: none;
+}
+.contact-text {
+  text-align: center;
+}
+.contact-text ul li {
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
 /* Styling the footer */
 .footer {
   background-color: #ee3224;
