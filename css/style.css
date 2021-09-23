@@ -187,11 +187,11 @@
     text-align: center;
   }
   .services-column h3 h4 {
-    text-align: center;
+    text-align: justify;
   }
   .services-column ul li {
     list-style: none;
-    text-align: center;
+    text-align: justify;
   }
   .contact-text a {
     text-align: center;
@@ -199,7 +199,7 @@
   }
   .contact-text ul li{
     list-style: none;
-    text-align: center;
+    text-align: justify;
     display: list-item;
     text-decoration: none;
   }
