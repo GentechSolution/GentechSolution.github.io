@@ -1,12 +1,9 @@
 /*Styling the header*/
 #header {
   padding: 10px 16px;
-  background-color: red;
+  background-color: white;
   color: white;
   text-align: center;
-}
-#home {
-  margin: 0px;
 }
 * {
   box-sizing: border-box;
@@ -18,8 +15,7 @@
   padding: 10px;
   text-align: center;
   background-color: #ee3224;
-  justify-content: space-evenly;
-  word-spacing: 25px;
+  word-spacing: 15px;
 }
 .navbar .icon {
   display: none;
@@ -28,11 +24,11 @@
   float: none;
   display: inline-flex;
   position: relative;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;  
+  font-size: 18px;  
 }
 .navbar a:hover {
   background-color: white;
@@ -109,6 +105,7 @@
 }
 .contact-text a {
   text-decoration: none;
+  color: black;
 }
 .contact-text {
   text-align: center;
@@ -119,6 +116,7 @@
   list-style: none;
   display: inline;
   padding: 10px;
+  color: black;
 }
 /* Styling the footer */
 .footer {
