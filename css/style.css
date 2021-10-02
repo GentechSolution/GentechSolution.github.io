@@ -5,7 +5,9 @@
   color: white;
   text-align: center;
 }
-#home {
+main {
+  background-color: #a09493;
+  margin-bottom: 0%;
   
 }
 /*Styling the header*/
