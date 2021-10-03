@@ -7,12 +7,17 @@
  .preloader {
      width: 100%;
      height: 100%;
-     background: grey;
+     background-image: url(/img/Background_Images/Black_3D_triangle_abstract_art_design_1366x768.jpg);
      position: fixed;
      top: 0;
      left: 0;
      z-index: 1;
  }
+ html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 150%;
+    line-height: 1.4;
+}
  .logo {
      width: 300px;
      height: 70px;
@@ -22,6 +27,30 @@
      text-align: center;
      color: azure;
  }
+ .viewport-header {
+    position: relative;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flexbox;
+  }
+ h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 100px;
+  }
+  span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: 3vw;
+  }
  .loader-frame {
      width: 70px;
      height: 70px;
@@ -34,17 +63,17 @@
      border-radius: 50%;
  }
  .loader1 {
-     width: 70px;
-     height: 70px;
-     border-top: 5px solid azure;
-     border-bottom: 5px solid azure;
+     width: 100px;
+     height: 100px;
+     border-top: 5px solid #ee3224;
+     border-bottom: 5px solid #ee3224;
      animation: clockwisespin 3s linear 3;
  }
  .loader2 {
-     width: 60px;
-     height: 60px;
-     border-left: 5px solid darkturquoise;
-     border-right: 5px solid darkturquoise;
+     width: 90px;
+     height: 90px;
+     border-left: 5px solid black;
+     border-right: 5px solid black;
      top: 5px; left: 5px;
      animation: anticlockwisespin 3s linear 3;
  }
@@ -59,4 +88,91 @@
 @keyframes fadeout {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+    * {box-sizing: border-box;}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+    }
+    .preloader {
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/Background_Images/Black_3D_triangle_abstract_art_design_1366x768.jpg);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    html {
+       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+       font-size: 100%;
+       line-height: 0;
+   }
+    .viewport-header {
+       position: relative;
+       height: 50%;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       display: inline-flexbox;
+     }
+    h1 {
+       font-family: 'Syncopate', sans-serif;
+       color: white;
+       text-transform: uppercase;
+       letter-spacing: 3vw;
+       line-height: 1.2;
+       font-size: 5vw;
+       text-align: center;
+     
+     }
+     span {
+       color: red;
+       display: block;
+       font-size: 10vw;
+       letter-spacing: 3vw;
+     }
+    .loader-frame {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        position: relative;
+    }
+    .loader1, .loader2 {
+        position: absolute;
+        border: 5px solid transparent;
+        border-radius: 50%;
+    }
+    .loader1 {
+        width: 100px;
+        height: 100px;
+        border-top: 5px solid #ee3224;
+        border-bottom: 5px solid #ee3224;
+        animation: clockwisespin 3s linear 3;
+    }
+    .loader2 {
+        width: 90px;
+        height: 90px;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        top: 5px; left: 5px;
+        animation: anticlockwisespin 3s linear 3;
+    }
+    @keyframes clockwisespin {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+    @keyframes anticlockwisespin {
+       from {transform: rotate(0deg);}
+       to {transform: rotate(-360deg);}
+   }
+   @keyframes fadeout {
+       from {opacity: 1;}
+       to {opacity: 0;}
+   }
 }
