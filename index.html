@@ -4,30 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Css Styling files -->
-        <link href="assets/icofont/icofont.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/landing.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/preloader.css">
         <meta name="keywords" content="Web Designer, Graphic Design, Hosting, Posters">
         <link rel="icon" href="img/logo/3.png" type="image/gif" sizes="16x16">        
         <title>
             Welcome To Gentech Solutions
         </title>
     </head>
-    <!-- Added a responsive video for the landing page -->
-    <div class="container-video">
-        <video autoplay muted loop id="myVideo">
-            <source src="/videos/Gentech Solutions Background Matrix.mp4">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-    <header class="viewport-header">
-        <h1> 
-            Gentech 
-            <span>Solutions</span>
-            <a href="home.html"><button class="btn-home"><i class="icofont-home"></i> Click Here To Enter </button></a>
-        </h1> 
-      </header>
-    <!-- JavaScript File -->
-    <script src="js/main.js">
-    </script>   
+    <body>
+        <div class="preloader">
+            <div class="logo">
+                Gentech <span style="color: red;">Solutions</span>
+            </div>
+            <div class="loader-frame">
+                <div class="loader1" id="loader1"></div>
+                <div class="loader2" id="loader2"></div>
+            </div>
+        </div>
+        <!-- JavaScript File -->
+    <script src="js/script.js">
+    </script>
+    </body> 
 </html>
