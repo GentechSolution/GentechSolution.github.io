@@ -51,6 +51,7 @@ main {
   text-decoration: underline;
   
 }
+
 /* Creating a sticky navbar */
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -185,6 +186,13 @@ main {
   }
   .navbar a {
     float: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
   }
   .sticky {
     position: fixed;
